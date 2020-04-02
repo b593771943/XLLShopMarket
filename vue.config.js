@@ -5,6 +5,7 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'less',
       patterns: [
+        // 设置全局less变量
         path.resolve(__dirname, './src/assets/css/base.less')
       ]
     }

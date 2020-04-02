@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <Tabbar :slotNames="slotNames" activeColor="#FF5777">
         <img :slot="slotNames[0] + 'icon'" src="~imgs/tabbar/home.svg" mode="aspectFill" alt="" />
         <img :slot="slotNames[0] + 'icon' + 'active'" src="~imgs/tabbar/home_active.svg" mode="aspectFill" alt="" />
