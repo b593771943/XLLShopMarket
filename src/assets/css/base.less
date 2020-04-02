@@ -1,12 +1,15 @@
 @import "~normalize.css";
 
+@color_text: #666;
+@color_high_text: #ff5777;
+@color_tint: #ff8198;
+@color_background: #fff;
+@font_size: 14px;
+@line_height: 1.5;
+@color_tabTint: #f6f6f6;
+
 :root {
-  @color_text: #666;
-  @color_high_text: #ff5777;
-  @color_tint: #ff8198;
-  @color_background: #fff;
-  @font_size: 14px;
-  @line_height: 1.5
+
 }
 
 ::before,
@@ -17,7 +20,7 @@
 
 body {
   -moz-user-select: none; /*禁止用户点击选中文字*/
-  background: @color_background;
+  background-color: @color_background;
   color: @color_text;
   -webkit-tap-highlight-color: transparent;
   width: 100vw;

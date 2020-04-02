@@ -1,0 +1,29 @@
+#tabbar {
+  display: flex;
+  height: 49px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: @color_tabTint;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+  .barItem {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    margin: auto 0px;
+    font-size: @font_size;
+    img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+
+.barItem img {
+  width: 20px;
+  height: 20px;
+}
