@@ -8,5 +8,16 @@ module.exports = {
         path.resolve(__dirname, './src/assets/css/base.less')
       ]
     }
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'assets': '@/assets',
+        'components-less': 'assets/css/components',
+        'imgs': 'assets/imgs',
+        'pages': '@/pages',
+        'components': '@/components'
+      }
+    }
   }
 }

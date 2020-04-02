@@ -6,7 +6,7 @@
       @click="onTabClick($event, slotName)"
       :style="getCurrentStyle(slotName)"
     >
-      <div v-if="$route.path.indexOf(slotName) !== -1">
+      <div v-if="isCurrentPage(slotName)">
         <slot :name="slotName + 'icon' + 'active'"></slot>
       </div>
       <div v-else>
@@ -34,11 +34,17 @@
     },
     methods: {
       onTabClick(e, param) {
+        if (this.isCurrentPage(param)) {
+          return
+        }
         this.$router.replace(param)
       },
       getCurrentStyle(slotName) {
-        const textColor = this.$route.path.indexOf(slotName) !== -1 ? this.activeColor : 'black'
+        const textColor = this.isCurrentPage(slotName) ? this.activeColor : 'black'
         return {color: textColor}
+      },
+      isCurrentPage(slotName) {
+        return this.$route.path.indexOf(slotName) !== -1
       }
     },
     components: {
@@ -47,5 +53,5 @@
 </script>
 
 <style lang="less">
-  @import "../../../assets/css/components/tabbar/tabbar.less";
+  @import "~components-less/tabbar/tabbar.less";
 </style>
