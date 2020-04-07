@@ -17,7 +17,8 @@ module.exports = {
         'components-less': 'assets/css/components',
         'imgs': 'assets/imgs',
         'pages': '@/pages',
-        'components': '@/components'
+        'components': '@/components',
+        'network': '@/network'
       }
     }
   }

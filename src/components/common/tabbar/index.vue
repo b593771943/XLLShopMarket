@@ -53,5 +53,5 @@
 </script>
 
 <style lang="less">
-  @import "~components-less/tabbar/tabbar.less";
+  @import "~components-less/tabbar.less";
 </style>

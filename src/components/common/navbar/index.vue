@@ -21,5 +21,5 @@
 </script>
 
 <style lang="less">
-  @import "~components-less/navbar/navbar.less";
+  @import "~components-less/navbar.less";
 </style>
